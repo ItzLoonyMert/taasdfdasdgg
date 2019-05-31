@@ -41,15 +41,9 @@ client.on('ready', function(){
 
 
 
- client.on('message', message => {
-     if (message.content === "bot") {
-     let embed = new Discord.RichEmbed()
-
-  .setColor("#51cde6")
-  .addField("Playing on" , client.guilds.size)
 
 
-  message.channel.sendEmbed(embed);
 
-    }
-});
+
+
+client.login(process.env.BOT_TOKEN);
